@@ -1,53 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>AdoPet ONG</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AdoPet ONG — Resgate e Adoção</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-       <img src="./img/logo.png" alt="Essa é a logo da AdoPet ONG">
-       <h1>Sejam bem-vindos ao site da nossa ONG</h1>
-       <nav>
-        <ul>
-            <li><a href="./sobre.html" target="_blank">Sobre nós</a></li>
-            <li><a href="./adocao.html">Adoções</a></li>
-            <li><a href="./voluntario.html">Seja voluntário</a></li>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Página inicial AdoPet">
+        <img src="./img/logo.png" alt="Logotipo AdoPet" class="logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+
+        <ul id="menu-list" class="menu-list">
+          <li><a href="./sobre.html">Sobre nós</a></li>
+          <li><a href="./adocao.html">Adoções</a></li>
+          <li><a href="./voluntario.html">Seja voluntário</a></li>
         </ul>
-       </nav>
-    </header>
-    <main>
-        <h2>Juntos podemos fazer a diferença na vida dos animais!</h2>
-        <p>A AdoPet ONG é uma organização sem fins lucrativos dedicada a resgatar, cuidar e encontrar lares amorosos para animais abandonados. Nossa missão é promover o bem-estar animal e conscientizar a comunidade sobre a importância da adoção responsável.</p>
-        <p>Com uma equipe apaixonada e voluntários dedicados, trabalhamos incansavelmente para garantir que cada animal sob nossos cuidados receba o amor, atenção e cuidados veterinários necessários. Acreditamos que todos os animais merecem uma segunda chance e um lar cheio de carinho.</p>
-        <p>Explore nosso site para conhecer mais sobre nossa história, os animais disponíveis para adoção e como você pode se envolver como voluntário. Juntos, podemos transformar vidas e criar um futuro melhor para nossos amigos de quatro patas!</p>
-        <img src="./img/1.jpg" alt="Imagem1">
-        <img src="./img/2.jpg" alt="Imagem2">
-    </main>
-    <aside>
-        <h2>Dicas de cuidado com os seus pets</h2>
-        <p>Manter a saúde e o bem-estar dos seus pets é essencial para garantir uma vida longa e feliz ao lado deles. Aqui estão algumas dicas importantes para cuidar dos seus animais de estimação:</p>
-        <ol>
-            <li>💧 Mantenha sempre água fresca</li>
-            <li>🍖 Alimente com ração de qualidade</li>
-            <li>🏃‍♂️ Proporcione exercícios diários</li>
-            <li>🧼 Higienize regularmente</li>
-            <li>🩺 Leve ao veterinário regularmente</li>
-            <li>🦷 Cuide da saúde bucal</li>
-            <li>🧸 Ofereça brinquedos e estímulos</li>
-            <li>💤 Garanta um local confortável para dormir</li>
+      </nav>
+    </div>
 
-        </ol>
+    <div class="hero container">
+      <h1>Sejam bem-vindos ao site da nossa ONG</h1>
+      <p class="lead">Juntos podemos fazer a diferença na vida dos animais!</p>
+    </div>
+  </header>
+
+  <main class="container site-main" id="main-content">
+    <section class="about">
+      <h2>Quem somos</h2>
+      <p>A AdoPet ONG é uma organização sem fins lucrativos dedicada a resgatar, cuidar e encontrar lares amorosos para animais abandonados. Nossa missão é promover o bem-estar animal e conscientizar a comunidade sobre a importância da adoção responsável.</p>
+
+      <p>Com uma equipe apaixonada e voluntários dedicados, trabalhamos para garantir que cada animal sob nossos cuidados receba amor, atenção e cuidados veterinários necessários.</p>
+    </section>
+
+    <section class="galeria">
+      <h2>Alguns dos nossos amigos</h2>
+      <div class="grid-images">
+        <figure>
+          <img src="./img/1.jpg" alt="Cachorro disponível para adoção" class="responsive-img">
+          <figcaption>Bolt — Carinhoso e brincalhão</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./img/2.jpg" alt="Gato disponível para adoção" class="responsive-img">
+          <figcaption>Luna — Tranquila e carinhosa</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <aside class="sidebar" aria-labelledby="dicas-title">
+      <h2 id="dicas-title">Dicas de cuidado com os pets</h2>
+      <p>Manter a saúde e o bem-estar dos seus pets é essencial. Aqui vão dicas importantes:</p>
+      <ol>
+        <li>💧 Mantenha sempre água fresca.</li>
+        <li>🍖 Alimente com ração de qualidade e nas quantidades corretas.</li>
+        <li>🏃‍♂️ Proporcione exercícios diários e estímulos.</li>
+        <li>🧼 Higienize e escove quando necessário.</li>
+        <li>🩺 Consulte um veterinário regularmente.</li>
+        <li>🦷 Cuide da saúde bucal.</li>
+        <li>🧸 Ofereça brinquedos e enriquecimento ambiental.</li>
+        <li>💤 Garanta um local confortável para dormir.</li>
+      </ol>
     </aside>
-    <footer>
-        <p>Contato: <img src="./img/icons8-whatsapp-24.png" alt="icone do WhatsApp"> 83 99999-9999</p>
-        <p>Email: adopet@gmail.com</p>
-        <p>Endereço: Rua dos Animais, 123 - Cidade Pet, Estado</p>
-        <p>Redes sociais: <img src="./img/icons8-instagram-32.png" alt="icone do instagram"> adopetong</p>
-        <p><img src="./img/icons8-c-24.png" alt=""> 2025 AdoPet. Todos os direitos reservados.</p>
-    </footer>
-</body>
+  </main>
 
-</html>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <address>
+        <p>Contato: <img src="./img/icons8-whatsapp-24.png" alt="" aria-hidden="true"> (83) 99999-9999</p>
+        <p>Email: <a href="mailto:adopet@gmail.com">adopet@gmail.com</a></p>
+        <p>Endereço: Rua dos Animais, 123 — Cidade Pet, Estado</p>
+      </address>
+
+      <p>Redes sociais: <img src="./img/icons8-instagram-32.png" alt="" aria-hidden="true"> <a href="https://instagram.com/adopetong" target="_blank" rel="noopener noreferrer">adopetong</a></p>
+
+      <p>© 2025 AdoPet. Todos os direitos reservados.</p>
+    </div>
+  </footer>
