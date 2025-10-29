@@ -1,0 +1,228 @@
+/* ------------------------------
+   Design System — AdoPet ONG
+   Paleta e tipografia unificada
+------------------------------ */
+:root {
+  /* Cores principais */
+  --cor-primaria: #1a73e8;
+  --cor-secundaria: #1565c0;
+  --cor-destaque: #ffb300;
+
+  /* Neutras */
+  --cor-clara: #ffffff;
+  --cor-fundo: #f0f4f8;
+  --cor-texto: #333333;
+  --cor-cinza: #555555;
+
+  /* Tipografia */
+  --fonte-primaria: "Poppins", sans-serif;
+  --fonte-secundaria: "Merriweather", serif;
+
+  /* Espaçamento modular */
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}
+
+/* ------------------------------
+   Reset básico
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Cabeçalho
+------------------------------ */
+header {
+  text-align: center;
+  padding: var(--esp-5) var(--esp-2);
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+  color: var(--cor-clara);
+}
+
+header img {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: var(--esp-3);
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.25));
+}
+
+header h1 {
+  font-family: var(--fonte-secundaria);
+  font-size: 2.4rem;
+  margin-bottom: var(--esp-2);
+}
+
+header p {
+  max-width: 750px;
+  margin: 0 auto var(--esp-4);
+  font-size: 1.1rem;
+}
+
+/* ------------------------------
+   Conteúdo principal
+------------------------------ */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--esp-5) var(--esp-2);
+}
+
+main h2 {
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-secundaria);
+  margin-bottom: var(--esp-4);
+}
+
+/* Cards de Adoção */
+main section {
+  background: var(--cor-clara);
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: var(--esp-3);
+  margin-bottom: var(--esp-4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--esp-3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+main section img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+main section p {
+  flex: 1;
+  font-size: 1rem;
+  color: var(--cor-cinza);
+  line-height: 1.6;
+}
+
+/* Botões */
+button {
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
+  border: none;
+  border-radius: 8px;
+  padding: var(--esp-2) var(--esp-3);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-top: var(--esp-2);
+}
+
+button:hover {
+  background-color: var(--cor-secundaria);
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: var(--cor-destaque);
+  transform: scale(0.97);
+}
+
+/* ------------------------------
+   Rodapé
+------------------------------ */
+.site-footer {
+  background: var(--cor-secundaria);
+  color: var(--cor-clara);
+  text-align: center;
+  padding: var(--esp-4) var(--esp-2);
+}
+
+.site-footer a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+}
+
+.site-footer img.icon {
+  vertical-align: middle;
+  margin-right: var(--esp-1);
+}
+
+/* ------------------------------
+   Responsividade
+------------------------------ */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  main section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main section img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  header img {
+    width: 160px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main section {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--esp-3);
+  }
+
+  main section img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+/* Pequenos smartphones */
+@media (max-width: 480px) {
+  header img {
+    width: 120px;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  main section p {
+    font-size: 0.95rem;
+  }
+}

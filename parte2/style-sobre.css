@@ -1,0 +1,215 @@
+/* =======================================================
+   🌈 DESIGN SYSTEM - AdoPet ONG
+   ======================================================= */
+:root {
+  /* 🎨 Paleta de Cores */
+  --color-primary: #ff914d;
+  --color-primary-dark: #d76b28;
+  --color-secondary: #009688;
+  --color-accent: #ffd166;
+  --color-bg: #fff8f3;
+  --color-neutral-900: #222;
+  --color-neutral-600: #555;
+  --color-neutral-300: #ccc;
+  --color-neutral-100: #fff;
+
+  /* 🧱 Tipografia */
+  --font-primary: 'Poppins', Arial, sans-serif;
+
+  /* 🧩 Hierarquia de tamanhos */
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.6rem;
+  --font-size-xl: 2.2rem;
+  --font-size-xxl: 3rem;
+
+  /* 📏 Sistema de espaçamento (módulo 8px) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* 📱 Breakpoints */
+  --bp-xs: 480px;
+  --bp-sm: 768px;
+  --bp-md: 992px;
+  --bp-lg: 1200px;
+}
+
+/* =======================================================
+   🧰 ESTILOS GERAIS
+   ======================================================= */
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-neutral-900);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--space-1);
+}
+
+a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+/* =======================================================
+   🏠 HEADER / SOBRE NÓS
+   ======================================================= */
+header {
+  text-align: center;
+  padding: var(--space-5) var(--space-3);
+  background-color: var(--color-neutral-100);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+header img {
+  max-width: 180px;
+  height: auto;
+  margin: 0 auto var(--space-3);
+}
+
+header h1 {
+  font-size: var(--font-size-xxl);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-3);
+}
+
+header p {
+  font-size: var(--font-size-md);
+  color: var(--color-neutral-600);
+  max-width: 800px;
+  margin: 0 auto var(--space-3);
+  text-align: justify;
+}
+
+header button {
+  background-color: var(--color-primary);
+  border: none;
+  padding: var(--space-2) var(--space-4);
+  border-radius: 12px;
+  margin: var(--space-2);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+header button:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+header button a {
+  color: white;
+  font-weight: bold;
+}
+
+/* =======================================================
+   📸 IMAGENS DESTAQUE
+   ======================================================= */
+header img[alt*="ong"] {
+  width: 100%;
+  max-width: 400px;
+  margin: var(--space-3) auto;
+  border-radius: var(--space-2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* =======================================================
+   🦶 FOOTER
+   ======================================================= */
+.site-footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-neutral-100);
+  text-align: center;
+  padding: var(--space-4) 0;
+  border-top: 3px solid var(--color-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.footer-inner address {
+  font-style: normal;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-inner p {
+  margin-bottom: var(--space-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+}
+
+.footer-inner a {
+  color: var(--color-accent);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.footer-inner a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+/* Ícones dentro do footer */
+.footer-inner .icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* =======================================================
+   📱 RESPONSIVIDADE
+   ======================================================= */
+@media (max-width: var(--bp-sm)) {
+
+  header {
+    padding: var(--space-4) var(--space-2);
+  }
+
+  header h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  header p {
+    font-size: var(--font-size-sm);
+  }
+
+  header img {
+    max-width: 140px;
+  }
+
+  header img[alt*="ong"] {
+    max-width: 90%;
+  }
+
+  header button {
+    width: 80%;
+    font-size: var(--font-size-sm);
+  }
+
+  .footer-inner p {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .footer-inner .icon {
+    margin-bottom: var(--space-1);
+  }
+}

@@ -1,0 +1,261 @@
+/* =======================================================
+    🎨 VARIÁVEIS CSS - cadastro
+   ======================================================= */
+:root {
+  /* 🎨 Paleta de Cores */
+  --color-primary: #ff914d;
+  --color-primary-dark: #d76b28;
+  --color-secondary: #009688;
+  --color-accent: #ffd166;
+  --color-bg: #fff8f3;
+  --color-neutral-900: #222;
+  --color-neutral-600: #555;
+  --color-neutral-300: #ccc;
+  --color-neutral-100: #fff;
+
+  /* 🧱 Tipografia */
+  --font-primary: 'Poppins', Arial, sans-serif;
+
+  /* 🧩 Hierarquia de tamanhos */
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 1.6rem;
+  --font-size-xl: 2.2rem;
+  --font-size-xxl: 3rem;
+
+  /* 📏 Espaçamento modular (8px, 16px, 24px, 32px, 48px, 64px) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  /* 📱 Breakpoints */
+  --bp-xs: 480px;
+  --bp-sm: 768px;
+  --bp-md: 992px;
+  --bp-lg: 1200px;
+}
+
+/* =======================================================
+   ⚙️ ESTILOS GERAIS
+   ======================================================= */
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-neutral-900);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--space-1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =======================================================
+   🧭 HEADER
+   ======================================================= */
+header {
+  text-align: center;
+  padding: var(--space-5) var(--space-3);
+  background-color: var(--color-neutral-100);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+header img {
+  max-width: 180px;
+  margin: 0 auto var(--space-3);
+}
+
+header h1 {
+  font-size: var(--font-size-xxl);
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2);
+}
+
+header p {
+  font-size: var(--font-size-md);
+  color: var(--color-neutral-600);
+}
+
+/* =======================================================
+   🧾 FORMULÁRIO DE CADASTRO
+   ======================================================= */
+form {
+  background-color: var(--color-neutral-100);
+  padding: var(--space-4);
+  margin: var(--space-4) auto;
+  border-radius: var(--space-2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+}
+
+fieldset {
+  border: 2px solid var(--color-primary);
+  border-radius: var(--space-1);
+  margin-bottom: var(--space-3);
+  padding: var(--space-3);
+}
+
+legend {
+  color: var(--color-primary-dark);
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  padding: 0 var(--space-2);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+  color: var(--color-neutral-900);
+}
+
+input,
+select {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid var(--color-neutral-300);
+  border-radius: var(--space-1);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-3);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 4px var(--color-primary);
+}
+
+input:invalid:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 4px #ff4d4d;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: var(--space-1);
+}
+
+/* Botão de Envio */
+button {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: var(--space-2) var(--space-4);
+  border-radius: 10px;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  display: block;
+  margin: var(--space-3) auto;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+/* =======================================================
+   🐶 IMAGENS DE VOLUNTÁRIOS
+   ======================================================= */
+main img {
+  width: 100%;
+  max-width: 400px;
+  margin: var(--space-3) auto;
+  display: block;
+  border-radius: var(--space-2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* =======================================================
+   🦶 FOOTER
+   ======================================================= */
+.site-footer {
+  background-color: var(--color-primary-dark);
+  color: var(--color-neutral-100);
+  text-align: center;
+  padding: var(--space-4) 0;
+  border-top: 3px solid var(--color-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.footer-inner address {
+  font-style: normal;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-inner p {
+  margin-bottom: var(--space-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+}
+
+.footer-inner a {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.footer-inner a:hover {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.footer-inner img {
+  width: 24px;
+  height: 24px;
+}
+
+/* =======================================================
+   📱 RESPONSIVIDADE
+   ======================================================= */
+@media (max-width: var(--bp-sm)) {
+
+  header img {
+    max-width: 140px;
+  }
+
+  header h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  form {
+    padding: var(--space-3);
+  }
+
+  fieldset {
+    padding: var(--space-2);
+  }
+
+  button {
+    width: 100%;
+  }
+
+  main img {
+    max-width: 90%;
+  }
+
+  .footer-inner p {
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+}
