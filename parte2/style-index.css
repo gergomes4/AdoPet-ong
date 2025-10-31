@@ -473,3 +473,90 @@ button:disabled,
     justify-content: space-between;
   }
 }
+
+/* ======== AJUSTE COMPLETO DO MODO ESCURO ======== */
+
+/* Fundo e cor de texto geral */
+body.modo-escuro {
+  background-color: #121212 !important;
+  color: #f0f0f0 !important;
+}
+
+/* Cabeçalhos e parágrafos */
+body.modo-escuro h1,
+body.modo-escuro h2,
+body.modo-escuro h3,
+body.modo-escuro h4,
+body.modo-escuro p,
+body.modo-escuro li,
+body.modo-escuro address {
+  color: #f0f0f0 !important;
+}
+
+/* Links e navegação */
+body.modo-escuro a {
+  color: #f7941d !important;
+}
+
+body.modo-escuro a:hover {
+  color: #ffb84d !important;
+}
+
+/* Cabeçalho */
+body.modo-escuro .site-header {
+  background-color: #1c1c1c !important;
+  color: #fff !important;
+}
+
+/* Menu hamburguer e lista */
+body.modo-escuro .menu-list {
+  background-color: #1f1f1f !important;
+}
+
+body.modo-escuro .menu-list li a {
+  color: #fff !important;
+}
+
+/* Seções internas */
+body.modo-escuro section,
+body.modo-escuro aside {
+  background-color: transparent !important;
+  color: #f0f0f0 !important;
+}
+
+/* Figuras e legendas */
+body.modo-escuro figure {
+  background-color: transparent !important;
+}
+
+body.modo-escuro figcaption {
+  color: #ccc !important;
+}
+
+/* Rodapé */
+body.modo-escuro .site-footer {
+  background-color: #1c1c1c !important;
+  color: #f0f0f0 !important;
+}
+
+body.modo-escuro .site-footer a {
+  color: #f7941d !important;
+}
+
+/* Botão modo escuro/claro */
+body.modo-escuro .btn-tema {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #666;
+}
+
+body.modo-escuro .btn-tema:hover {
+  background-color: #444 !important;
+  color: #f7941d !important;
+}
+
+/* Correção para listas e aside */
+body.modo-escuro ol,
+body.modo-escuro ul {
+  color: #f0f0f0 !important;
+}

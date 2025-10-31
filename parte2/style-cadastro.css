@@ -259,3 +259,75 @@ main img {
     gap: var(--space-1);
   }
 }
+
+/* ===== Modo Escuro Total ===== */
+body.modo-escuro {
+  background-color: #000;  /* fundo preto total */
+  color: #f0f0f0;          /* texto branco */
+}
+
+/* Inputs e selects no modo escuro */
+body.modo-escuro input,
+body.modo-escuro select,
+body.modo-escuro textarea {
+  background-color: #111;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+/* Fieldsets */
+body.modo-escuro fieldset {
+  border-color: #444;
+}
+
+/* Cabeçalho e rodapé */
+body.modo-escuro header,
+body.modo-escuro .site-footer {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Links e botões */
+body.modo-escuro a {
+  color: #f7941d;
+}
+
+body.modo-escuro a:hover {
+  color: #ffb84d;
+}
+
+body.modo-escuro .btn-tema {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.modo-escuro .btn-tema:hover {
+  background-color: #444;
+  color: #f7941d;
+}
+
+/* Figuras e legendas */
+body.modo-escuro figure {
+  background-color: transparent;
+}
+
+body.modo-escuro figcaption {
+  color: #ccc;
+}
+
+/* Listas e aside */
+body.modo-escuro ol,
+body.modo-escuro ul {
+  color: #f0f0f0;
+}
+
+/* Títulos e parágrafos */
+body.modo-escuro h1,
+body.modo-escuro h2,
+body.modo-escuro h3,
+body.modo-escuro p,
+body.modo-escuro li,
+body.modo-escuro address {
+  color: #f0f0f0;
+}

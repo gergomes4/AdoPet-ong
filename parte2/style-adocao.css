@@ -226,3 +226,57 @@ button:active {
     font-size: 0.95rem;
   }
 }
+
+/* ======== MODO ESCURO ========= */
+body.modo-escuro {
+  background-color: #000 !important;
+  color: #fff !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Botões */
+body.modo-escuro button {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+body.modo-escuro button:hover {
+  background-color: #333;
+  color: #ffb84d;
+}
+
+/* Rodapé e cabeçalho */
+body.modo-escuro header,
+body.modo-escuro footer {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Links */
+body.modo-escuro a {
+  color: #f7941d;
+}
+body.modo-escuro a:hover {
+  color: #ffb84d;
+}
+
+/* ======== Mensagem de confirmação ======== */
+.msg-confirmacao {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: fadeIn 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
