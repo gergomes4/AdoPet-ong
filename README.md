@@ -99,7 +99,7 @@ O site segue as diretrizes da **WCAG 2.1**, garantindo acesso a todos os usuári
 O projeto foi publicado em ambiente de produção via **GitHub Pages**.
 
 🔗 **Acesse o site:**
-👉 [https://gergomes4.github.io/adopet-ong/](https://seuusuario.github.io/adopet-ong/)
+👉 https://gergomes4.github.io/AdoPet-ong/
 
 ---
 
